@@ -263,7 +263,7 @@ b{
 .packaging-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr repeat(3, 1fr);
+    grid-template-rows: 1fr repeat(2, 1fr);
     gap: 40px;
 }
 
