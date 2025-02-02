@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text);
+}
+
+:root{
+    --primary: #cbbba0;
+    --text:#181818;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*MENU*/
+
+header{
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-between;
+    padding: 12px;
+    box-shadow: 0px 10px 30px rgba(199, 199, 199, 0.176);
+}
+
+header,ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu, ul{
+    margin-bottom: 0;
+}
+
+li a{
+    margin-right: 1.50rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    text-decoration: none;
+}
+
+li a:hover{
+    border-bottom: 1.5px solid #cbbba0;
+    color: var(--primary);
+    padding-bottom: 2px;
+    transition: all 300ms ease-in-out;
+}
+
+a.btn-primary{
+    background-color: var(--primary);
+    text-decoration: none;
+    border: 1.5px solid #cbbba0;
+    padding: 6px 10px;
+    margin-right: 0.5rem;
+    color: #fff;
+    transition: all 100ms ease-out;
+}
+
+a.btn-primary:hover{
+    background-color: #b3a284;
+    border: 1.5px solid #b3a284;
+    padding: 6px 10px;
+    color: #fff;
+}
+
+a.btn-secondary{
+    text-decoration: none;
+    border: 1.5px solid #d3c7b1;
+    padding: 6px 10px;
+    margin-right: 0.5rem;
+    color: var(--primary);
+}
+
+a.btn-secondary:hover{
+    background-color: #d4cab725;
+    text-decoration: none;
+    
+}
+
+.show-menu,
+    .hide-menu{
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+        transition: 0.4s;
+    }
+
+    .show-menu{
+        order: 1;
+    }
+
+    .menu a:hover,
+    .show-menu:hover,
+    .hide-menu{
+        transition: 0.2s ease-out;
+    }
+
+    #check{
+        display: none;
+    }
+
+
+    #logo-desktop img{
+        width: 15rem;
+    }
+
+    #logo-phone{
+        display: none;
+    }
+
+    
+/*RESPONSIVE HEADER*/
+
+@media screen and (max-width:480px) {
+
+    header{
+        padding: 15px;
+    }
+
+    #logo-desktop {
+        display: none;
+    }
+    
+    #logo-phone {
+        height: 2.5rem;
+        display: flex;
+    }
+
+    header li a{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+    }
+
+    
+    .show-menu,
+    .hide-menu{
+    display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 120vh;
+        background: #FEFEFF;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 25px;
+        z-index: 100;
+        transition: 0.8s;
+        display: block;
+        justify-content: center;
+        margin: 0;
+    }
+
+    header li a{
+        display: block;
+        padding: 20px;
+        color: #181818;
+        justify-content: center;
+        margin-bottom: 2px;
+    }
+
+    .hide-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        color: #181818;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    
+}
+
+
+/*MAIN*/
+
+.main-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 8%;
+}
+
+#carouselExampleInterval{
+    width: 100%;
+}
+
+.w-100{
+    border-radius: 5px;
+    height: 260px;
+    object-fit: cover;
+}
+
+#packaging p{
+    text-align: left;
+}
+
+a.link-btn{
+    color: var(--text);
+    text-decoration: none;
+}
+
+.last-item{
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-family: "Scheherazade New", serif;
+}
+
+p{
+    margin-bottom: 0rem;
+    line-height: 2rem;
+}
+
+b{
+    font-weight: 600;
+    font-family: "Scheherazade New", serif;
+    font-size: 1.2rem;
+}
+
+/*RESPONSIVE MAIN*/
+
+@media screen and (max-width:768px) {
+    .m-content{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main-content{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 25px;
+        gap: 8%;
+    }
+}
+
+
+
+/*PLANS*/
+
+#plans{
+    margin: 40px;
+    text-align: center;
+}
+
+#plans .btn-primary{
+    margin-bottom: 35px;
+}
+
+#plans div.btn-primary{
+    display: none;
+}
+
+.plans{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin: 2rem;
+    align-items: center;
+}
+
+.card-plan{
+    background-color: #f6f6f6;
+    width: 240px;
+    height: 460px;
+}
+
+.card-plan h1{
+    background-color: #d3c7b1;
+    font-size: 1.5rem;
+    font-family: "Scheherazade New", serif;
+    padding: 5px;
+}
+
+.card-plan h2{
+    background-color: #b3a284;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+
+.card-plan h3{
+    background-color: #181818;
+    color: #b3a284;
+    font-family: "Scheherazade New", serif;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.card-plan p{
+    padding: 30px 15px 0px;
+}
+
+.card-plan a.btn-secondary{
+    margin-right: 0;
+    padding: 6px 75px;
+}
+
+.card-plan a.btn-primary{
+    padding: 6px 75px;
+}
+
+.card-plan a.btn-secondary, a.btn-primary:hover{
+    margin-right: 0;
+    padding: 6px 75px;
+}
+
+
+.list-plans-a, .list-plans-b, .list-plans-c{
+    list-style: inside;
+    display: block;
+    margin-right: 0rem;
+    padding: 0;
+    text-align: left;
+   
+}
+
+.list-plans-a{
+    padding: 58px 25px;
+    line-height: 3rem;
+}
+
+.list-plans-b{
+    padding: 48.5px 25px;
+    line-height: 2.2rem;
+}
+
+.list-plans-c{
+    padding: 25px;
+    line-height: 2rem;
+}
+
+.contact-plan{
+    line-height: 4rem;
+}
+
+
+/*RESPONSIVE PLANS*/
+
+@media screen and (max-width:768px) {
+    #plans{
+        margin: 10px;
+        text-align: center;
+    }
+    
+    #plans .btn-primary{
+        margin-bottom: 35px;
+    }
+    
+    .plans{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin: 0.5rem;
+        padding-bottom: 20%;
+    }
+    
+    
+}
+
+@media screen and (max-width:562px){
+    .card-plan{
+        background-color: #f6f6f6;
+        width: 540px;
+        height: 410px;
+    }
+    
+    .card-plan h1{
+        background-color: #d3c7b1;
+        font-size: 1.5rem;
+        font-family: "Scheherazade New", serif;
+        padding: 5px;
+    }
+    
+    .card-plan h2{
+        background-color: #b3a284;
+        font-size: 1.6rem;
+        padding: 5px;
+    }
+    
+    .card-plan h3{
+        background-color: #181818;
+        color: #b3a284;
+        font-family: "Scheherazade New", serif;
+        font-size: 1.6rem;
+        padding: 5px;
+    }
+    
+    .card-plan p{
+        padding: 30px 15px 0px;
+    }
+    
+    .card-plan a.btn-secondary{
+        margin-right: 0;
+        padding: 6px 20px;
+    }
+    
+    .list-plans-a{
+        padding: 65px 20px;
+        font-size: 0.7rem;
+        line-height: 1.8rem;
+    }
+    
+    .list-plans-b{
+        padding: 30px 20px;
+        font-size: 0.7rem;
+        line-height: 1.8rem;
+    }
+
+    .list-plans-c{
+        padding: 7px 20px;
+        font-size: 0.7rem;
+        line-height: 1.8rem;
+    }
+
+    .contact-plan{
+        line-height: 4rem;
+        margin-top: 30px;
+    }
+}
+
+
+/*FOOTER*/
+
+#contact{
+    background-color: var(--primary);
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30%;
+}
+
+.contact-rss, .contact-help{
+    line-height: 3rem;
+}
+
+a.link-btn:hover{
+    border-bottom: 1.5px solid #FEFEFF;
+    color: #FEFEFF;
+    padding-bottom: 2px;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-third{
+    background-color: #fefeff;
+    text-decoration: none;
+    border: 1.5px solid #fefeff;
+    padding: 6px 10px;
+    margin-right: 0.5rem;
+    color: #b3a284;
+    transition: all 100ms ease-out;
+}
+
+
+.btn-third:hover{
+    background-color: #b3a284;
+    border: 1.5px solid #b3a284;
+    padding: 6px 10px;
+    color: #fff;
+}
+
+/*FOOTER RESPONSIVE*/
+
+@media screen and (max-width:486px) {
+    #contact{
+        padding: 40px 20px;
+        font-size: 0.6rem;
+    }
+
+    .contact-rss, .contact-help{
+        line-height: 2.5rem;
+    }
+}
