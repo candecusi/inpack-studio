@@ -1,0 +1,19 @@
+/*FOOTER*/
+
+#contact{
+    background-color: map-get($colors,primary);
+    padding: 60px 40px;
+    @include flex;
+    justify-content: space-around;
+    gap: 30%;
+
+
+    .contact-rss{
+        line-height: 3rem;
+    }
+
+    .contact-help{
+        @extend .contact-rss;
+    }
+
+}

@@ -1,0 +1,52 @@
+
+
+@media screen and (min-width:1440px){
+
+
+    /*MAIN*/
+
+    main{
+
+        .main-content{
+            
+            #carouselExampleInterval{
+                width: 800px;
+            }
+        
+        }
+    }
+
+
+    /*RESONSIVE HIGHLIGHT*/
+    .highlight{
+        margin: 30px;
+
+        article{
+            width: 675px;
+        }
+    }
+
+
+    /*PACKAGING*/
+
+#packaging{
+
+    .packaging-list{
+
+        .packaging-card{
+            width: 460px;
+            height: 350px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+
+}
+
+}

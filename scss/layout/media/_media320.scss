@@ -1,0 +1,36 @@
+@media screen and (max-width:320px) {
+
+    
+    /*RESONSIVE HIGHLIGHT*/
+    .highlight{
+
+        article{
+            width: 250px;
+            height: 160px;
+        }
+    }
+
+
+    
+    /*RESPONSIVE PACKAGING*/
+
+    #packaging{
+    margin: 25px 25px 55px;
+        .packaging-list{
+            gap: 45px 15px;
+    
+            .packaging-card{
+                width: 130px;
+                height: 100px;
+
+                h3{
+                    font-size: 1rem;
+                }
+            }
+        }
+    
+    
+    }
+}
+
+

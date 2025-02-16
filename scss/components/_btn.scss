@@ -1,0 +1,65 @@
+/*BUTTONS*/
+
+    a.btn-primary{
+        background-color: map-get($colors,primary);
+        text-decoration: none;
+        border: 1.5px solid #cbbba0;
+        padding: 6px 10px;
+        margin-right: 0.5rem;
+        color: #fff;
+        transition: all 100ms ease-out;
+
+        &:hover{
+            background-color: #b3a284;
+            border: 1.5px solid #b3a284;
+            padding: 6px 10px;
+            color: #fff;
+        }
+    }
+  
+
+    a.btn-secondary{
+        text-decoration: none;
+        border: 1.5px solid #d3c7b1;
+        padding: 6px 10px;
+        margin-right: 0.5rem;
+        color: map-get($colors,primary);
+
+        &:hover{
+            background-color: #d4cab725;
+            text-decoration: none;
+        }
+
+    }
+    
+
+    a.link-btn{
+        color: #000;
+        text-decoration: none;
+        &:hover{
+            border-bottom: 1.5px solid #FEFEFF;
+            color: #FEFEFF;
+            padding-bottom: 2px;
+            transition: all 300ms ease-in-out;
+        }
+    }
+
+    .btn-third{
+        background-color: #fefeff;
+        text-decoration: none;
+        border: 1.5px solid #fefeff;
+        padding: 6px 10px;
+        margin-right: 0.5rem;
+        color: #b3a284;
+        transition: all 100ms ease-out;
+
+        &:hover{
+            background-color: #b3a284;
+            border: 1.5px solid #b3a284;
+            padding: 6px 10px;
+            color: #fff;
+            }
+    }
+    
+
+

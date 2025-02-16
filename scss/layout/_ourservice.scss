@@ -1,0 +1,35 @@
+/*OUR SERVICE*/
+
+#our-service{
+    margin: 40px;
+    @include text-center;
+
+    .about-inpack-studio{
+        padding: 5%;
+        margin: 40px 0px;
+        background-color: map-get($colors,bg);
+        border-radius: 5px;
+
+        p{
+            @include text-center;
+        }
+    }
+
+    .about-inpack-studio-mobile{
+        @extend .about-inpack-studio;
+        display: none;
+
+        p{
+            @include text-center;
+        }
+    }
+
+    h2{
+        @include text-left;
+
+    }
+
+    p{
+        @include text-left;
+    }
+}

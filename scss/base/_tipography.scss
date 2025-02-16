@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
+
+h2{
+    font-family: map-get($fonts,title);
+}
+
+p{
+    margin-bottom: 0rem;
+    line-height: 2rem;
+    font-size: map-get($fonts,subtitle);
+}
+
+b{
+    font-weight: 600;
+    font-family: map-get($fonts,title);
+    font-size: 1.2rem;
+}

@@ -1,0 +1,37 @@
+/*HIGHLIGHT*/
+
+#highlight{
+    margin: 40px;
+    @include text-center;
+
+    h2{
+        @include text-left;
+    }
+
+    p{
+        @include text-left;
+    }
+
+}
+
+    .highlight{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        margin: 40px 0px;
+        flex-wrap: wrap;
+        @include justify-center;
+
+        article{
+            width: 580px;
+            height: 360px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+        }
+    }

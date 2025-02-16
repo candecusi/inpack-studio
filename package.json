@@ -1,0 +1,17 @@
+{
+  "name": "inpack-studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/style.scss ./css/style.css",
+    "about": "sass --watch ./scss/about.scss ./css/about.css",
+    "packaging": "sass --watch ./scss/packaging.scss ./css/packaging.css",
+    "plans": "sass --watch ./scss/plans.scss ./css/plans.css",
+    "gallery": "sass --watch ./scss/gallery.scss ./css/gallery.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

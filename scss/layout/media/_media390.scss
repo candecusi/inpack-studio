@@ -1,0 +1,31 @@
+@media screen and (max-width:390px) {
+    
+    /*RESPONSIVE HIGHLIGHT*/
+ 
+     .highlight{
+
+        article{
+            width: 300px;
+            height: 180px;
+        }
+    }
+
+    .plans{
+        flex-wrap: wrap;
+    }
+
+
+    #packaging{
+    
+        .packaging-list{
+    
+            .packaging-card{
+                width: 150px;
+                height: 100px;
+            }
+        }
+    
+    
+    }
+
+}
