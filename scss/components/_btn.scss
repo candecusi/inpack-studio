@@ -7,7 +7,7 @@
         padding: 6px 10px;
         margin-right: 0.5rem;
         color: #fff;
-        transition: all 100ms ease-out;
+        transition: all 0.3s ease-in-out;
 
         &:hover{
             background-color: #b3a284;
@@ -51,7 +51,7 @@
         padding: 6px 10px;
         margin-right: 0.5rem;
         color: #b3a284;
-        transition: all 100ms ease-out;
+        transition: all 0.3s ease-out;
 
         &:hover{
             background-color: #b3a284;
